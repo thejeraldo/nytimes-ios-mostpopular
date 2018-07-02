@@ -42,6 +42,27 @@ class nytimes_ios_mostpopularTests: XCTestCase {
     wait(for: [ expectations ], timeout: 60)
   }
   
+  func testMostPopulaAPI() {
+    let expectations = XCTestExpectation(description: "mostpopular api")
+    
+    if let url = URL(string: baseURL)?.appendingPathComponent("svc/mostpopular/v2/mostviewed/all-sections/7.json") {
+      let params: Parameters = [
+        "api-key": apiKey
+      ]
+      Alamofire.request(url, method: .get, parameters: params, encoding: URLEncoding.default, headers: nil).responseJSON { (response) in
+        guard response.error == nil else {
+          expectations.fulfill()
+          return
+        }
+        print(response)
+        XCTAssert(response.value != nil, "response was nil")
+        expectations.fulfill()
+      }
+    }
+    
+    wait(for: [ expectations ], timeout: 60)
+  }
+  
   override func tearDown() {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     super.tearDown()
