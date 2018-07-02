@@ -1,0 +1,6 @@
+framework module Pods_nytimes_ios_mostpopularTests {
+  umbrella header "Pods-nytimes-ios-mostpopularTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
