@@ -22,6 +22,13 @@
 		F8F6D8EF20EB1ADE00A6FD8E /* NYTimesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F6D8EE20EB1ADE00A6FD8E /* NYTimesService.swift */; };
 		F8F6D8F220EB1D5700A6FD8E /* Sections.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F6D8F120EB1D5700A6FD8E /* Sections.swift */; };
 		F8F6D8F420EB214200A6FD8E /* MostPopular.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F6D8F320EB214200A6FD8E /* MostPopular.swift */; };
+		F8F6D8F720EB291600A6FD8E /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F6D8F620EB291600A6FD8E /* ArticleViewModel.swift */; };
+		F8F6D8FC20EB2E8600A6FD8E /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F6D8FA20EB2E8600A6FD8E /* ArticleTableViewCell.swift */; };
+		F8F6D8FD20EB2E8600A6FD8E /* ArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8F6D8FB20EB2E8600A6FD8E /* ArticleTableViewCell.xib */; };
+		F8F6D90020EB2F4000A6FD8E /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F6D8FF20EB2F4000A6FD8E /* UIImageView.swift */; };
+		F8F6D90220EB339C00A6FD8E /* ArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F6D90120EB339C00A6FD8E /* ArticlesViewController.swift */; };
+		F8F6D90420EB33AB00A6FD8E /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F6D90320EB33AB00A6FD8E /* ArticleDetailViewController.swift */; };
+		F8F6D90620EB343200A6FD8E /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F6D90520EB343200A6FD8E /* SplitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +76,13 @@
 		F8F6D8EE20EB1ADE00A6FD8E /* NYTimesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimesService.swift; sourceTree = "<group>"; };
 		F8F6D8F120EB1D5700A6FD8E /* Sections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sections.swift; sourceTree = "<group>"; };
 		F8F6D8F320EB214200A6FD8E /* MostPopular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopular.swift; sourceTree = "<group>"; };
+		F8F6D8F620EB291600A6FD8E /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
+		F8F6D8FA20EB2E8600A6FD8E /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		F8F6D8FB20EB2E8600A6FD8E /* ArticleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleTableViewCell.xib; sourceTree = "<group>"; };
+		F8F6D8FF20EB2F4000A6FD8E /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		F8F6D90120EB339C00A6FD8E /* ArticlesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewController.swift; sourceTree = "<group>"; };
+		F8F6D90320EB33AB00A6FD8E /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
+		F8F6D90520EB343200A6FD8E /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +161,10 @@
 		F8F6D8B820EA95DC00A6FD8E /* nytimes-ios-mostpopular */ = {
 			isa = PBXGroup;
 			children = (
+				F8F6D8FE20EB2F2100A6FD8E /* Extensions */,
+				F8F6D8F920EB2E6800A6FD8E /* ViewControllers */,
+				F8F6D8F820EB2E6000A6FD8E /* Views */,
+				F8F6D8F520EB290100A6FD8E /* ViewModel */,
 				F8F6D8F020EB1CAA00A6FD8E /* Model */,
 				F8F6D8E720EABCAF00A6FD8E /* Networking */,
 				F8F6D8B920EA95DC00A6FD8E /* AppDelegate.swift */,
@@ -194,6 +212,41 @@
 				F8F6D8F320EB214200A6FD8E /* MostPopular.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F8F6D8F520EB290100A6FD8E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F8F6D8F620EB291600A6FD8E /* ArticleViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F8F6D8F820EB2E6000A6FD8E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F8F6D8FA20EB2E8600A6FD8E /* ArticleTableViewCell.swift */,
+				F8F6D8FB20EB2E8600A6FD8E /* ArticleTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F8F6D8F920EB2E6800A6FD8E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F8F6D90120EB339C00A6FD8E /* ArticlesViewController.swift */,
+				F8F6D90320EB33AB00A6FD8E /* ArticleDetailViewController.swift */,
+				F8F6D90520EB343200A6FD8E /* SplitViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F8F6D8FE20EB2F2100A6FD8E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F8F6D8FF20EB2F4000A6FD8E /* UIImageView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,6 +357,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8F6D8FD20EB2E8600A6FD8E /* ArticleTableViewCell.xib in Resources */,
 				F8F6D8C420EA95E400A6FD8E /* LaunchScreen.storyboard in Resources */,
 				F8F6D8C120EA95E400A6FD8E /* Assets.xcassets in Resources */,
 				F8F6D8BF20EA95DC00A6FD8E /* Main.storyboard in Resources */,
@@ -408,10 +462,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8F6D90220EB339C00A6FD8E /* ArticlesViewController.swift in Sources */,
 				F8F6D8ED20EB195B00A6FD8E /* NYTimesAPI.swift in Sources */,
+				F8F6D90420EB33AB00A6FD8E /* ArticleDetailViewController.swift in Sources */,
+				F8F6D8FC20EB2E8600A6FD8E /* ArticleTableViewCell.swift in Sources */,
+				F8F6D8F720EB291600A6FD8E /* ArticleViewModel.swift in Sources */,
 				F8F6D8F220EB1D5700A6FD8E /* Sections.swift in Sources */,
 				F8F6D8EB20EB0DDE00A6FD8E /* WebServiceProtocol.swift in Sources */,
 				F8F6D8EF20EB1ADE00A6FD8E /* NYTimesService.swift in Sources */,
+				F8F6D90020EB2F4000A6FD8E /* UIImageView.swift in Sources */,
+				F8F6D90620EB343200A6FD8E /* SplitViewController.swift in Sources */,
 				F8F6D8BC20EA95DC00A6FD8E /* ViewController.swift in Sources */,
 				F8F6D8F420EB214200A6FD8E /* MostPopular.swift in Sources */,
 				F8F6D8BA20EA95DC00A6FD8E /* AppDelegate.swift in Sources */,
@@ -591,6 +651,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6VJF35UZSF;
 				INFOPLIST_FILE = "nytimes-ios-mostpopular/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -610,6 +671,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6VJF35UZSF;
 				INFOPLIST_FILE = "nytimes-ios-mostpopular/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

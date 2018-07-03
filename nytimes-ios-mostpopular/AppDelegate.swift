@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
+    
+    setupAppearance()
+    setupSVProgressHUD()
+    
     return true
   }
 
@@ -40,7 +45,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func applicationWillTerminate(_ application: UIApplication) {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
   }
+}
 
-
+extension AppDelegate {
+  func setupAppearance() {
+    UINavigationBar.appearance().barTintColor = UIColor(named: "primary")
+    UINavigationBar.appearance().tintColor = UIColor.white
+    UINavigationBar.appearance().titleTextAttributes = [
+      NSAttributedStringKey.foregroundColor: UIColor.white,
+      NSAttributedStringKey.font: UIFont.systemFont(ofSize: 17, weight: .bold)
+    ]
+  }
+  
+  func setupSVProgressHUD() {
+    SVProgressHUD.setDefaultMaskType(.clear)
+    SVProgressHUD.setMaximumDismissTimeInterval(1)
+  }
 }
 
