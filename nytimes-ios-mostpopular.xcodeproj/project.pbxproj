@@ -17,6 +17,8 @@
 		F8F6D8C420EA95E400A6FD8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F6D8C220EA95E400A6FD8E /* LaunchScreen.storyboard */; };
 		F8F6D8CF20EA95E500A6FD8E /* nytimes_ios_mostpopularTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F6D8CE20EA95E500A6FD8E /* nytimes_ios_mostpopularTests.swift */; };
 		F8F6D8DA20EA95E500A6FD8E /* nytimes_ios_mostpopularUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F6D8D920EA95E500A6FD8E /* nytimes_ios_mostpopularUITests.swift */; };
+		F8F6D8EB20EB0DDE00A6FD8E /* WebServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F6D8EA20EB0DDE00A6FD8E /* WebServiceProtocol.swift */; };
+		F8F6D8ED20EB195B00A6FD8E /* NYTimesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F6D8EC20EB195B00A6FD8E /* NYTimesAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		F8F6D8D520EA95E500A6FD8E /* nytimes-ios-mostpopularUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "nytimes-ios-mostpopularUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F6D8D920EA95E500A6FD8E /* nytimes_ios_mostpopularUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nytimes_ios_mostpopularUITests.swift; sourceTree = "<group>"; };
 		F8F6D8DB20EA95E500A6FD8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8F6D8EA20EB0DDE00A6FD8E /* WebServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceProtocol.swift; sourceTree = "<group>"; };
+		F8F6D8EC20EB195B00A6FD8E /* NYTimesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimesAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,7 @@
 		F8F6D8B820EA95DC00A6FD8E /* nytimes-ios-mostpopular */ = {
 			isa = PBXGroup;
 			children = (
+				F8F6D8E720EABCAF00A6FD8E /* Networking */,
 				F8F6D8B920EA95DC00A6FD8E /* AppDelegate.swift */,
 				F8F6D8BB20EA95DC00A6FD8E /* ViewController.swift */,
 				F8F6D8BD20EA95DC00A6FD8E /* Main.storyboard */,
@@ -163,6 +168,15 @@
 				F8F6D8DB20EA95E500A6FD8E /* Info.plist */,
 			);
 			path = "nytimes-ios-mostpopularUITests";
+			sourceTree = "<group>";
+		};
+		F8F6D8E720EABCAF00A6FD8E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F8F6D8EC20EB195B00A6FD8E /* NYTimesAPI.swift */,
+				F8F6D8EA20EB0DDE00A6FD8E /* WebServiceProtocol.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,6 +391,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8F6D8ED20EB195B00A6FD8E /* NYTimesAPI.swift in Sources */,
+				F8F6D8EB20EB0DDE00A6FD8E /* WebServiceProtocol.swift in Sources */,
 				F8F6D8BC20EA95DC00A6FD8E /* ViewController.swift in Sources */,
 				F8F6D8BA20EA95DC00A6FD8E /* AppDelegate.swift in Sources */,
 			);
@@ -555,7 +571,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6VJF35UZSF;
 				INFOPLIST_FILE = "nytimes-ios-mostpopular/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thejeraldo.nytimes-ios-mostpopular";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -571,7 +590,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6VJF35UZSF;
 				INFOPLIST_FILE = "nytimes-ios-mostpopular/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thejeraldo.nytimes-ios-mostpopular";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -588,7 +610,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6VJF35UZSF;
 				INFOPLIST_FILE = "nytimes-ios-mostpopularTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thejeraldo.nytimes-ios-mostpopularTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -606,7 +632,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6VJF35UZSF;
 				INFOPLIST_FILE = "nytimes-ios-mostpopularTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thejeraldo.nytimes-ios-mostpopularTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -623,7 +653,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6VJF35UZSF;
 				INFOPLIST_FILE = "nytimes-ios-mostpopularUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thejeraldo.nytimes-ios-mostpopularUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -640,7 +674,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6VJF35UZSF;
 				INFOPLIST_FILE = "nytimes-ios-mostpopularUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thejeraldo.nytimes-ios-mostpopularUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
