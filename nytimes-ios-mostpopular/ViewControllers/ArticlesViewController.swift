@@ -27,6 +27,7 @@ class ArticlesViewController: UIViewController {
       tableView.tableFooterView = UIView()
       tableView.estimatedRowHeight = 100
       tableView.rowHeight = UITableViewAutomaticDimension
+      
     }
   }
   
@@ -37,8 +38,10 @@ class ArticlesViewController: UIViewController {
     self.splitViewController?.delegate = self
     self.splitViewController?.preferredDisplayMode = .allVisible
     
+    /*
     let menuBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "menu"), style: .plain, target: self, action: #selector(showMenu))
     navigationItem.rightBarButtonItem = menuBarButtonItem
+    */
     
     loadArticles()
   }
@@ -108,6 +111,8 @@ extension ArticlesViewController: UITableViewDelegate {
   }
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    tableView.deselectRow(at: indexPath, animated: true)
+    
     let article = self.articles[indexPath.row]
     let articleViewModel = ArticleViewModel(article: article)
     let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ArticleDetailViewController") as! ArticleDetailViewController
