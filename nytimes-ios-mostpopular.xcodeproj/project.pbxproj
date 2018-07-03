@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D6356F30EFB0A99138D6B3D /* Pods_nytimes_ios_mostpopularUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5848C1C8BEE790CEE7E0D9 /* Pods_nytimes_ios_mostpopularUITests.framework */; };
+		8F64D0D5D1C1FC21565B7CF7 /* Pods_nytimes_ios_mostpopular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FB3DF746CB2E3BB8B2ECBE8 /* Pods_nytimes_ios_mostpopular.framework */; };
+		CC8C45416E0EBB51DFFEA6B5 /* Pods_nytimes_ios_mostpopularTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 715D40F3F73317D2DA27FC40 /* Pods_nytimes_ios_mostpopularTests.framework */; };
 		F8F6D8BA20EA95DC00A6FD8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F6D8B920EA95DC00A6FD8E /* AppDelegate.swift */; };
 		F8F6D8BC20EA95DC00A6FD8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F6D8BB20EA95DC00A6FD8E /* ViewController.swift */; };
 		F8F6D8BF20EA95DC00A6FD8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F6D8BD20EA95DC00A6FD8E /* Main.storyboard */; };
@@ -14,6 +17,18 @@
 		F8F6D8C420EA95E400A6FD8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F6D8C220EA95E400A6FD8E /* LaunchScreen.storyboard */; };
 		F8F6D8CF20EA95E500A6FD8E /* nytimes_ios_mostpopularTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F6D8CE20EA95E500A6FD8E /* nytimes_ios_mostpopularTests.swift */; };
 		F8F6D8DA20EA95E500A6FD8E /* nytimes_ios_mostpopularUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F6D8D920EA95E500A6FD8E /* nytimes_ios_mostpopularUITests.swift */; };
+		F8F6D8EB20EB0DDE00A6FD8E /* WebServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F6D8EA20EB0DDE00A6FD8E /* WebServiceProtocol.swift */; };
+		F8F6D8ED20EB195B00A6FD8E /* NYTimesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F6D8EC20EB195B00A6FD8E /* NYTimesAPI.swift */; };
+		F8F6D8EF20EB1ADE00A6FD8E /* NYTimesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F6D8EE20EB1ADE00A6FD8E /* NYTimesService.swift */; };
+		F8F6D8F220EB1D5700A6FD8E /* Sections.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F6D8F120EB1D5700A6FD8E /* Sections.swift */; };
+		F8F6D8F420EB214200A6FD8E /* MostPopular.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F6D8F320EB214200A6FD8E /* MostPopular.swift */; };
+		F8F6D8F720EB291600A6FD8E /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F6D8F620EB291600A6FD8E /* ArticleViewModel.swift */; };
+		F8F6D8FC20EB2E8600A6FD8E /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F6D8FA20EB2E8600A6FD8E /* ArticleTableViewCell.swift */; };
+		F8F6D8FD20EB2E8600A6FD8E /* ArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8F6D8FB20EB2E8600A6FD8E /* ArticleTableViewCell.xib */; };
+		F8F6D90020EB2F4000A6FD8E /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F6D8FF20EB2F4000A6FD8E /* UIImageView.swift */; };
+		F8F6D90220EB339C00A6FD8E /* ArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F6D90120EB339C00A6FD8E /* ArticlesViewController.swift */; };
+		F8F6D90420EB33AB00A6FD8E /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F6D90320EB33AB00A6FD8E /* ArticleDetailViewController.swift */; };
+		F8F6D90620EB343200A6FD8E /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F6D90520EB343200A6FD8E /* SplitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +49,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		117EEE4F7CB2A20DF31E1AE6 /* Pods-nytimes-ios-mostpopularTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nytimes-ios-mostpopularTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nytimes-ios-mostpopularTests/Pods-nytimes-ios-mostpopularTests.debug.xcconfig"; sourceTree = "<group>"; };
+		147848AB88E0E80AF79CC60B /* Pods-nytimes-ios-mostpopularTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nytimes-ios-mostpopularTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-nytimes-ios-mostpopularTests/Pods-nytimes-ios-mostpopularTests.release.xcconfig"; sourceTree = "<group>"; };
+		1FB3DF746CB2E3BB8B2ECBE8 /* Pods_nytimes_ios_mostpopular.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nytimes_ios_mostpopular.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56BF7AB33D6BA2EDDBC059C1 /* Pods-nytimes-ios-mostpopular.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nytimes-ios-mostpopular.release.xcconfig"; path = "Pods/Target Support Files/Pods-nytimes-ios-mostpopular/Pods-nytimes-ios-mostpopular.release.xcconfig"; sourceTree = "<group>"; };
+		6C4010C14320D0E0DEB09476 /* Pods-nytimes-ios-mostpopularUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nytimes-ios-mostpopularUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-nytimes-ios-mostpopularUITests/Pods-nytimes-ios-mostpopularUITests.release.xcconfig"; sourceTree = "<group>"; };
+		715D40F3F73317D2DA27FC40 /* Pods_nytimes_ios_mostpopularTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nytimes_ios_mostpopularTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FFBE664FD8FED9289B63B24 /* Pods-nytimes-ios-mostpopular.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nytimes-ios-mostpopular.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nytimes-ios-mostpopular/Pods-nytimes-ios-mostpopular.debug.xcconfig"; sourceTree = "<group>"; };
+		99AE26C4B422C34169651FFD /* Pods-nytimes-ios-mostpopularUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nytimes-ios-mostpopularUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nytimes-ios-mostpopularUITests/Pods-nytimes-ios-mostpopularUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9A5848C1C8BEE790CEE7E0D9 /* Pods_nytimes_ios_mostpopularUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nytimes_ios_mostpopularUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F6D8B620EA95DC00A6FD8E /* nytimes-ios-mostpopular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nytimes-ios-mostpopular.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F6D8B920EA95DC00A6FD8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8F6D8BB20EA95DC00A6FD8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +71,18 @@
 		F8F6D8D520EA95E500A6FD8E /* nytimes-ios-mostpopularUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "nytimes-ios-mostpopularUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F6D8D920EA95E500A6FD8E /* nytimes_ios_mostpopularUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nytimes_ios_mostpopularUITests.swift; sourceTree = "<group>"; };
 		F8F6D8DB20EA95E500A6FD8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8F6D8EA20EB0DDE00A6FD8E /* WebServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceProtocol.swift; sourceTree = "<group>"; };
+		F8F6D8EC20EB195B00A6FD8E /* NYTimesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimesAPI.swift; sourceTree = "<group>"; };
+		F8F6D8EE20EB1ADE00A6FD8E /* NYTimesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimesService.swift; sourceTree = "<group>"; };
+		F8F6D8F120EB1D5700A6FD8E /* Sections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sections.swift; sourceTree = "<group>"; };
+		F8F6D8F320EB214200A6FD8E /* MostPopular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopular.swift; sourceTree = "<group>"; };
+		F8F6D8F620EB291600A6FD8E /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
+		F8F6D8FA20EB2E8600A6FD8E /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		F8F6D8FB20EB2E8600A6FD8E /* ArticleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleTableViewCell.xib; sourceTree = "<group>"; };
+		F8F6D8FF20EB2F4000A6FD8E /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		F8F6D90120EB339C00A6FD8E /* ArticlesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewController.swift; sourceTree = "<group>"; };
+		F8F6D90320EB33AB00A6FD8E /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
+		F8F6D90520EB343200A6FD8E /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F64D0D5D1C1FC21565B7CF7 /* Pods_nytimes_ios_mostpopular.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC8C45416E0EBB51DFFEA6B5 /* Pods_nytimes_ios_mostpopularTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +106,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D6356F30EFB0A99138D6B3D /* Pods_nytimes_ios_mostpopularUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0749F71874303CBDD7F69F43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FB3DF746CB2E3BB8B2ECBE8 /* Pods_nytimes_ios_mostpopular.framework */,
+				715D40F3F73317D2DA27FC40 /* Pods_nytimes_ios_mostpopularTests.framework */,
+				9A5848C1C8BEE790CEE7E0D9 /* Pods_nytimes_ios_mostpopularUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2907BD2312866369F63E1AB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7FFBE664FD8FED9289B63B24 /* Pods-nytimes-ios-mostpopular.debug.xcconfig */,
+				56BF7AB33D6BA2EDDBC059C1 /* Pods-nytimes-ios-mostpopular.release.xcconfig */,
+				117EEE4F7CB2A20DF31E1AE6 /* Pods-nytimes-ios-mostpopularTests.debug.xcconfig */,
+				147848AB88E0E80AF79CC60B /* Pods-nytimes-ios-mostpopularTests.release.xcconfig */,
+				99AE26C4B422C34169651FFD /* Pods-nytimes-ios-mostpopularUITests.debug.xcconfig */,
+				6C4010C14320D0E0DEB09476 /* Pods-nytimes-ios-mostpopularUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F8F6D8AD20EA95DB00A6FD8E = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +143,8 @@
 				F8F6D8CD20EA95E500A6FD8E /* nytimes-ios-mostpopularTests */,
 				F8F6D8D820EA95E500A6FD8E /* nytimes-ios-mostpopularUITests */,
 				F8F6D8B720EA95DC00A6FD8E /* Products */,
+				2907BD2312866369F63E1AB8 /* Pods */,
+				0749F71874303CBDD7F69F43 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +161,12 @@
 		F8F6D8B820EA95DC00A6FD8E /* nytimes-ios-mostpopular */ = {
 			isa = PBXGroup;
 			children = (
+				F8F6D8FE20EB2F2100A6FD8E /* Extensions */,
+				F8F6D8F920EB2E6800A6FD8E /* ViewControllers */,
+				F8F6D8F820EB2E6000A6FD8E /* Views */,
+				F8F6D8F520EB290100A6FD8E /* ViewModel */,
+				F8F6D8F020EB1CAA00A6FD8E /* Model */,
+				F8F6D8E720EABCAF00A6FD8E /* Networking */,
 				F8F6D8B920EA95DC00A6FD8E /* AppDelegate.swift */,
 				F8F6D8BB20EA95DC00A6FD8E /* ViewController.swift */,
 				F8F6D8BD20EA95DC00A6FD8E /* Main.storyboard */,
@@ -125,6 +195,60 @@
 			path = "nytimes-ios-mostpopularUITests";
 			sourceTree = "<group>";
 		};
+		F8F6D8E720EABCAF00A6FD8E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F8F6D8EC20EB195B00A6FD8E /* NYTimesAPI.swift */,
+				F8F6D8EA20EB0DDE00A6FD8E /* WebServiceProtocol.swift */,
+				F8F6D8EE20EB1ADE00A6FD8E /* NYTimesService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F8F6D8F020EB1CAA00A6FD8E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8F6D8F120EB1D5700A6FD8E /* Sections.swift */,
+				F8F6D8F320EB214200A6FD8E /* MostPopular.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F8F6D8F520EB290100A6FD8E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F8F6D8F620EB291600A6FD8E /* ArticleViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F8F6D8F820EB2E6000A6FD8E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F8F6D8FA20EB2E8600A6FD8E /* ArticleTableViewCell.swift */,
+				F8F6D8FB20EB2E8600A6FD8E /* ArticleTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F8F6D8F920EB2E6800A6FD8E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F8F6D90120EB339C00A6FD8E /* ArticlesViewController.swift */,
+				F8F6D90320EB33AB00A6FD8E /* ArticleDetailViewController.swift */,
+				F8F6D90520EB343200A6FD8E /* SplitViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F8F6D8FE20EB2F2100A6FD8E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F8F6D8FF20EB2F4000A6FD8E /* UIImageView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +256,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8F6D8DE20EA95E500A6FD8E /* Build configuration list for PBXNativeTarget "nytimes-ios-mostpopular" */;
 			buildPhases = (
+				67030B9771EC6BE3E10F9C93 /* [CP] Check Pods Manifest.lock */,
 				F8F6D8B220EA95DC00A6FD8E /* Sources */,
 				F8F6D8B320EA95DC00A6FD8E /* Frameworks */,
 				F8F6D8B420EA95DC00A6FD8E /* Resources */,
+				8A56FDCDB5CE4A2952FA66CD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +275,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8F6D8E120EA95E500A6FD8E /* Build configuration list for PBXNativeTarget "nytimes-ios-mostpopularTests" */;
 			buildPhases = (
+				C3B501C840054B6DCD64D96D /* [CP] Check Pods Manifest.lock */,
 				F8F6D8C620EA95E500A6FD8E /* Sources */,
 				F8F6D8C720EA95E500A6FD8E /* Frameworks */,
 				F8F6D8C820EA95E500A6FD8E /* Resources */,
@@ -167,6 +294,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8F6D8E420EA95E500A6FD8E /* Build configuration list for PBXNativeTarget "nytimes-ios-mostpopularUITests" */;
 			buildPhases = (
+				FAFA52785B3059C6BFC87624 /* [CP] Check Pods Manifest.lock */,
 				F8F6D8D120EA95E500A6FD8E /* Sources */,
 				F8F6D8D220EA95E500A6FD8E /* Frameworks */,
 				F8F6D8D320EA95E500A6FD8E /* Resources */,
@@ -229,6 +357,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8F6D8FD20EB2E8600A6FD8E /* ArticleTableViewCell.xib in Resources */,
 				F8F6D8C420EA95E400A6FD8E /* LaunchScreen.storyboard in Resources */,
 				F8F6D8C120EA95E400A6FD8E /* Assets.xcassets in Resources */,
 				F8F6D8BF20EA95DC00A6FD8E /* Main.storyboard in Resources */,
@@ -251,12 +380,100 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		67030B9771EC6BE3E10F9C93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-nytimes-ios-mostpopular-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A56FDCDB5CE4A2952FA66CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-nytimes-ios-mostpopular/Pods-nytimes-ios-mostpopular-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nytimes-ios-mostpopular/Pods-nytimes-ios-mostpopular-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3B501C840054B6DCD64D96D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-nytimes-ios-mostpopularTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAFA52785B3059C6BFC87624 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-nytimes-ios-mostpopularUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F8F6D8B220EA95DC00A6FD8E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8F6D90220EB339C00A6FD8E /* ArticlesViewController.swift in Sources */,
+				F8F6D8ED20EB195B00A6FD8E /* NYTimesAPI.swift in Sources */,
+				F8F6D90420EB33AB00A6FD8E /* ArticleDetailViewController.swift in Sources */,
+				F8F6D8FC20EB2E8600A6FD8E /* ArticleTableViewCell.swift in Sources */,
+				F8F6D8F720EB291600A6FD8E /* ArticleViewModel.swift in Sources */,
+				F8F6D8F220EB1D5700A6FD8E /* Sections.swift in Sources */,
+				F8F6D8EB20EB0DDE00A6FD8E /* WebServiceProtocol.swift in Sources */,
+				F8F6D8EF20EB1ADE00A6FD8E /* NYTimesService.swift in Sources */,
+				F8F6D90020EB2F4000A6FD8E /* UIImageView.swift in Sources */,
+				F8F6D90620EB343200A6FD8E /* SplitViewController.swift in Sources */,
 				F8F6D8BC20EA95DC00A6FD8E /* ViewController.swift in Sources */,
+				F8F6D8F420EB214200A6FD8E /* MostPopular.swift in Sources */,
 				F8F6D8BA20EA95DC00A6FD8E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,11 +645,13 @@
 		};
 		F8F6D8DF20EA95E500A6FD8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FFBE664FD8FED9289B63B24 /* Pods-nytimes-ios-mostpopular.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6VJF35UZSF;
 				INFOPLIST_FILE = "nytimes-ios-mostpopular/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,11 +665,13 @@
 		};
 		F8F6D8E020EA95E500A6FD8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56BF7AB33D6BA2EDDBC059C1 /* Pods-nytimes-ios-mostpopular.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6VJF35UZSF;
 				INFOPLIST_FILE = "nytimes-ios-mostpopular/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,6 +685,7 @@
 		};
 		F8F6D8E220EA95E500A6FD8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 117EEE4F7CB2A20DF31E1AE6 /* Pods-nytimes-ios-mostpopularTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,6 +707,7 @@
 		};
 		F8F6D8E320EA95E500A6FD8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 147848AB88E0E80AF79CC60B /* Pods-nytimes-ios-mostpopularTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +729,7 @@
 		};
 		F8F6D8E520EA95E500A6FD8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99AE26C4B422C34169651FFD /* Pods-nytimes-ios-mostpopularUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -526,6 +750,7 @@
 		};
 		F8F6D8E620EA95E500A6FD8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C4010C14320D0E0DEB09476 /* Pods-nytimes-ios-mostpopularUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
