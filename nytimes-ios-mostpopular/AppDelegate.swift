@@ -58,7 +58,7 @@ extension AppDelegate {
   }
   
   func setupSVProgressHUD() {
-    SVProgressHUD.setDefaultMaskType(.clear)
+    SVProgressHUD.setDefaultMaskType(.gradient)
     SVProgressHUD.setMaximumDismissTimeInterval(1)
   }
 }
