@@ -23,14 +23,10 @@ class nytimes_ios_mostpopularTests: XCTestCase {
   
   func testSectionsAPI() {
     let expectations = XCTestExpectation(description: "sections api")
-    
-    Alamofire.request(NYTimesAPI.getSections()).responseJSON { (response) in
-      guard response.error == nil else {
-        expectations.fulfill()
-        return
-      }
-      print(response)
-      XCTAssert(response.value != nil, "response was nil")
+    let service = NYTimesService()
+    service.getSections { (sections, error) in
+      XCTAssertNil(error, "Sections api error")
+      XCTAssertNotNil(sections, "Sections was nil")
       expectations.fulfill()
     }
     
@@ -39,14 +35,11 @@ class nytimes_ios_mostpopularTests: XCTestCase {
   
   func testMostPopulaAPI() {
     let expectations = XCTestExpectation(description: "mostpopular api")
-    
-    Alamofire.request(NYTimesAPI.getMostPopularForSection("all-sections", timePeriod: .week)).responseJSON { (response) in
-      guard response.error == nil else {
-        expectations.fulfill()
-        return
-      }
-      print(response)
-      XCTAssert(response.value != nil, "response was nil")
+    let service = NYTimesService()
+    service.getMostPopularForSection("all-sections", timePeriod: .day) { (mostPopular, error) in
+      XCTAssertNil(error, "MostPopular api error")
+      XCTAssertNil(mostPopular?.message, "MostPopular api error \(mostPopular?.message ?? "")")
+      XCTAssertNotNil(mostPopular, "MostPopular was nil")
       expectations.fulfill()
     }
     
