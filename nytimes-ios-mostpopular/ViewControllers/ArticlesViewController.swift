@@ -112,7 +112,8 @@ extension ArticlesViewController: UITableViewDelegate {
     let articleViewModel = ArticleViewModel(article: article)
     let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ArticleDetailViewController") as! ArticleDetailViewController
     vc.articleViewModel = articleViewModel
-    splitViewController?.showDetailViewController(vc, sender: self)
+    let nav = UINavigationController(rootViewController: vc)
+    splitViewController?.showDetailViewController(nav, sender: self)
   }
 }
 
