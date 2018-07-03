@@ -5,8 +5,8 @@ It shows a list of the most popular articles that when tapped, shows the details
 
 ## Installation
 * Compatible with 11.0 and above
-* Simply open the workspace in Xcode, build, run and enjoy. 8-)
-(Pods included in the repository so no need to pod install.)
+* Pods included in the repository so no need to pod install.
+* Simply open the workspace in Xcode, build, run and enjoy.
 
 ## Showcase
 * Model-View-ViewModel (MVVM) approach
